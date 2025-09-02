@@ -1,82 +1,70 @@
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('720c6541-4275-44c8-b58d-ac5d0313703e')/settings(settingDefinitions())",
-    "@odata.count": 1,
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('2b40ac3e-bf53-4084-87c2-880107cdadc1')/settings(settingDefinitions())",
+    "@odata.count": 14,
     "value": [
         {
             "id": "0",
             "settingInstance": {
                 "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                "settingDefinitionId": "device_vendor_msft_policy_config_privacy_letappsaccesslocation",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_importautofillformdata_recommended",
                 "settingInstanceTemplateReference": null,
                 "choiceSettingValue": {
                     "settingValueTemplateReference": null,
-                    "value": "device_vendor_msft_policy_config_privacy_letappsaccesslocation_1",
+                    "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_importautofillformdata_recommended_0",
                     "children": []
                 }
             },
             "settingDefinitions": [
                 {
                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
-                    "accessTypes": "add,delete,get,replace",
+                    "accessTypes": "none",
                     "keywords": [
-                        "Let Apps Access Location",
-                        "Privacy"
+                        "ImportAutofillFormData_recommended",
+                        "Allow importing of autofill form data",
+                        "\\Microsoft Edge - Default Settings (users can override)",
+                        "Microsoft Edge - Default Settings (users can override)"
                     ],
-                    "infoUrls": [
-                        "https://docs.microsoft.com/windows/client-management/mdm/policy-csp-Privacy#letappsaccesslocation"
-                    ],
+                    "infoUrls": [],
                     "baseUri": "./Device/Vendor/MSFT/Policy",
-                    "offsetUri": "/Config/Privacy/LetAppsAccessLocation",
-                    "rootDefinitionId": "device_vendor_msft_policy_config_privacy_letappsaccesslocation",
-                    "categoryId": "98e76d3e-9e52-45b3-b0c7-f029023121e9",
+                    "offsetUri": "/Config/microsoft_edge~Policy~microsoft_edge_recommended/ImportAutofillFormData_recommended",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_importautofillformdata_recommended",
+                    "categoryId": "43593f1a-6e4d-44a9-b1d4-99b375a9baa6",
                     "settingUsage": "configuration",
-                    "uxBehavior": "default",
+                    "uxBehavior": "toggle",
                     "visibility": "settingsCatalog,template",
                     "riskLevel": "low",
-                    "id": "device_vendor_msft_policy_config_privacy_letappsaccesslocation",
-                    "description": "This policy setting specifies whether Windows apps can access location.",
+                    "id": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_importautofillformdata_recommended",
+                    "description": "Allows users to import autofill form data from another browser into Microsoft Edge.\r\n\r\nIf you enable this policy, the option to manually import autofill data is automatically selected.\r\n\r\nIf you disable this policy, autofill form data isn't imported at first run, and users can't import it manually.\r\n\r\nIf you don't configure this policy, autofill data is imported at first run, and users can choose whether to import this data manually during later browsing sessions.\r\n\r\nYou can set this policy as a recommendation. This means that Microsoft Edge will import autofill data on first run, but users can select or clear **autofill data** option during manual import.\r\n\r\n**Note**: This policy currently manages importing from Google Chrome (on Windows 7, 8, and 10 and on macOS) and Mozilla Firefox (on Windows 7, 8, and 10 and on macOS) browsers.",
                     "helpText": "",
-                    "name": "LetAppsAccessLocation",
-                    "displayName": "Let Apps Access Location",
+                    "name": "ImportAutofillFormData_recommended",
+                    "displayName": "Allow importing of autofill form data",
                     "version": "638917477006998785",
-                    "defaultOptionId": "device_vendor_msft_policy_config_privacy_letappsaccesslocation_0",
+                    "defaultOptionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_importautofillformdata_recommended_0",
                     "applicability": {
                         "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
                         "description": null,
                         "platform": "windows10",
                         "deviceMode": "none",
                         "technologies": "mdm",
-                        "configurationServiceProviderVersion": "4.1",
+                        "configurationServiceProviderVersion": "5.0",
                         "maximumSupportedVersion": null,
-                        "minimumSupportedVersion": "10.0.14393",
-                        "windowsSkus": [
-                            "windowsEnterprise",
-                            "windowsProfessional",
-                            "windowsHome",
-                            "windowsEducation",
-                            "holographicForBusiness",
-                            "windowsMultiSession",
-                            "iotEnterprise",
-                            "windowsCloudN",
-                            "windows11SE",
-                            "iotEnterpriseSEval",
-                            "windowsCPC"
-                        ],
+                        "minimumSupportedVersion": null,
+                        "windowsSkus": [],
                         "requiresAzureAd": false,
                         "requiredAzureAdTrustType": "none"
                     },
                     "occurrence": {
-                        "minDeviceOccurrence": 0,
+                        "minDeviceOccurrence": 1,
                         "maxDeviceOccurrence": 1
                     },
                     "referredSettingInformationList": [],
                     "options": [
                         {
-                            "itemId": "device_vendor_msft_policy_config_privacy_letappsaccesslocation_0",
-                            "description": "User in control.",
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_importautofillformdata_recommended_0",
+                            "description": null,
                             "helpText": null,
-                            "name": "User in control.",
-                            "displayName": "User in control.",
+                            "name": "Disabled",
+                            "displayName": "Disabled",
                             "optionValue": {
                                 "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
                                 "settingValueTemplateReference": null,
@@ -86,11 +74,11 @@
                             "dependedOnBy": []
                         },
                         {
-                            "itemId": "device_vendor_msft_policy_config_privacy_letappsaccesslocation_1",
-                            "description": "Force allow.",
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_importautofillformdata_recommended_1",
+                            "description": null,
                             "helpText": null,
-                            "name": "Force allow.",
-                            "displayName": "Force allow.",
+                            "name": "Enabled",
+                            "displayName": "Enabled",
                             "optionValue": {
                                 "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
                                 "settingValueTemplateReference": null,
@@ -98,22 +86,1590 @@
                             },
                             "dependentOn": [],
                             "dependedOnBy": []
-                        },
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "1",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_recommended_importbrowsersettings_recommended",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_recommended_importbrowsersettings_recommended_0",
+                    "children": []
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "none",
+                    "keywords": [
+                        "ImportBrowserSettings_recommended",
+                        "Allow importing of browser settings",
+                        "\\Microsoft Edge - Default Settings (users can override)",
+                        "Microsoft Edge - Default Settings (users can override)"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/microsoft_edgev78diff~Policy~microsoft_edge_recommended/ImportBrowserSettings_recommended",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_recommended_importbrowsersettings_recommended",
+                    "categoryId": "43593f1a-6e4d-44a9-b1d4-99b375a9baa6",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_recommended_importbrowsersettings_recommended",
+                    "description": "Allows users to import browser settings from another browser into Microsoft Edge.\r\n\r\nIf you enable this policy, the **Browser settings** check box is automatically selected in the **Import browser data** dialog box.\r\n\r\nIf you disable this policy, browser settings aren't imported at first run, and users can’t import them manually.\r\n\r\nIf you don’t configure this policy, browser settings are imported at first run, and users can choose whether to import them manually during later browsing sessions.\r\n\r\nYou can also set this policy as a recommendation. This means that Microsoft Edge imports the settings on first run, but users can select or clear the **browser settings** option during manual import.\r\n\r\n**Note**: This policy currently manages importing Google Chrome (on Windows 7, 8, and 10 and on macOS).",
+                    "helpText": "",
+                    "name": "ImportBrowserSettings_recommended",
+                    "displayName": "Allow importing of browser settings",
+                    "version": "638917477006998785",
+                    "defaultOptionId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_recommended_importbrowsersettings_recommended_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "5.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": null,
+                        "windowsSkus": [],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 1,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
                         {
-                            "itemId": "device_vendor_msft_policy_config_privacy_letappsaccesslocation_2",
-                            "description": "Force deny.",
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_recommended_importbrowsersettings_recommended_0",
+                            "description": null,
                             "helpText": null,
-                            "name": "Force deny.",
-                            "displayName": "Force deny.",
+                            "name": "Disabled",
+                            "displayName": "Disabled",
                             "optionValue": {
                                 "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
                                 "settingValueTemplateReference": null,
-                                "value": 2
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_recommended_importbrowsersettings_recommended_1",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Enabled",
+                            "displayName": "Enabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
                             },
                             "dependentOn": [],
                             "dependedOnBy": []
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_importhistory_recommended",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_importhistory_recommended_0",
+                    "children": []
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "none",
+                    "keywords": [
+                        "ImportHistory_recommended",
+                        "Allow importing of browsing history",
+                        "\\Microsoft Edge - Default Settings (users can override)",
+                        "Microsoft Edge - Default Settings (users can override)"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/microsoft_edge~Policy~microsoft_edge_recommended/ImportHistory_recommended",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_importhistory_recommended",
+                    "categoryId": "43593f1a-6e4d-44a9-b1d4-99b375a9baa6",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_importhistory_recommended",
+                    "description": "Allows users to import their browsing history from another browser into Microsoft Edge.\r\n\r\nIf you enable this policy, the **Browsing history** check box is automatically selected in the **Import browser data** dialog box.\r\n\r\nIf you disable this policy, browsing history data isn't imported at first run, and users can’t import this data manually.\r\n\r\nIf you don’t configure this policy, browsing history data is imported at first run, and users can choose whether to import it manually during later browsing sessions.\r\n\r\nYou can also set this policy as a recommendation. This means that Microsoft Edge imports browsing history on first run, but users can select or clear the **history** option during manual import.\r\n\r\n**Note**: This policy currently manages importing from Internet Explorer (on Windows 7, 8, and 10), Google Chrome (on Windows 7, 8, and 10 and on macOS), Mozilla Firefox (on Windows 7, 8, and 10 and on macOS), and Apple Safari (macOS) browsers.",
+                    "helpText": "",
+                    "name": "ImportHistory_recommended",
+                    "displayName": "Allow importing of browsing history",
+                    "version": "638917477006998785",
+                    "defaultOptionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_importhistory_recommended_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "5.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": null,
+                        "windowsSkus": [],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 1,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_importhistory_recommended_0",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Disabled",
+                            "displayName": "Disabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_importhistory_recommended_1",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Enabled",
+                            "displayName": "Enabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_recommended_importcookies_recommended",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_recommended_importcookies_recommended_0",
+                    "children": []
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "none",
+                    "keywords": [
+                        "ImportCookies_recommended",
+                        "Allow importing of Cookies",
+                        "\\Microsoft Edge - Default Settings (users can override)",
+                        "Microsoft Edge - Default Settings (users can override)"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/microsoft_edgev81diff~Policy~microsoft_edge_recommended/ImportCookies_recommended",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_recommended_importcookies_recommended",
+                    "categoryId": "43593f1a-6e4d-44a9-b1d4-99b375a9baa6",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_recommended_importcookies_recommended",
+                    "description": "Allows users to import Cookies from another browser into Microsoft Edge.\r\n\r\nIf you disable this policy, Cookies aren't imported on first run.\r\n\r\nIf you don’t configure this policy, Cookies are imported on first run.\r\n\r\nYou can also set this policy as a recommendation. This means that Microsoft Edge imports Cookies on first run.\r\n\r\n**Note**: This policy currently manages importing Google Chrome (on Windows 7, 8, and 10 and on macOS).",
+                    "helpText": "",
+                    "name": "ImportCookies_recommended",
+                    "displayName": "Allow importing of Cookies",
+                    "version": "638917477006998785",
+                    "defaultOptionId": "device_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_recommended_importcookies_recommended_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "5.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": null,
+                        "windowsSkus": [],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 1,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_recommended_importcookies_recommended_0",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Disabled",
+                            "displayName": "Disabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_recommended_importcookies_recommended_1",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Enabled",
+                            "displayName": "Enabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_recommended_importextensions_recommended",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_recommended_importextensions_recommended_0",
+                    "children": []
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "none",
+                    "keywords": [
+                        "ImportExtensions_recommended",
+                        "Allow importing of extensions",
+                        "\\Microsoft Edge - Default Settings (users can override)",
+                        "Microsoft Edge - Default Settings (users can override)"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/microsoft_edgev81diff~Policy~microsoft_edge_recommended/ImportExtensions_recommended",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_recommended_importextensions_recommended",
+                    "categoryId": "43593f1a-6e4d-44a9-b1d4-99b375a9baa6",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_recommended_importextensions_recommended",
+                    "description": "Allows users to import extensions from another browser into Microsoft Edge.\r\n\r\nIf you enable this policy, the **Extensions** check box is automatically selected in the **Import browser data** dialog box.\r\n\r\nIf you disable this policy, extensions aren't imported at first run, and users can't import them manually.\r\n\r\nIf you don't configure this policy, extensions are imported at first run, and users can choose whether to import them manually during later browsing sessions.\r\n\r\nYou can also set this policy as a recommendation. This means that Microsoft Edge imports extensions on first run, but users can select or clear the **extensions** option during manual import.\r\n\r\n**Note**: This policy currently only supports importing from Google Chrome (on Windows 7, 8, and 10 and on macOS).",
+                    "helpText": "",
+                    "name": "ImportExtensions_recommended",
+                    "displayName": "Allow importing of extensions",
+                    "version": "638917477006998785",
+                    "defaultOptionId": "device_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_recommended_importextensions_recommended_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "5.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": null,
+                        "windowsSkus": [],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 1,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_recommended_importextensions_recommended_0",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Disabled",
+                            "displayName": "Disabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_recommended_importextensions_recommended_1",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Enabled",
+                            "displayName": "Enabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_importfavorites_recommended",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_importfavorites_recommended_0",
+                    "children": []
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "none",
+                    "keywords": [
+                        "ImportFavorites_recommended",
+                        "Allow importing of favorites",
+                        "\\Microsoft Edge - Default Settings (users can override)",
+                        "Microsoft Edge - Default Settings (users can override)"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/microsoft_edge~Policy~microsoft_edge_recommended/ImportFavorites_recommended",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_importfavorites_recommended",
+                    "categoryId": "43593f1a-6e4d-44a9-b1d4-99b375a9baa6",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_importfavorites_recommended",
+                    "description": "Allows users to import favorites from another browser into Microsoft Edge.\r\n\r\nIf you enable this policy, the **Favorites** check box is automatically selected in the **Import browser data** dialog box.\r\n\r\nIf you disable this policy, favorites aren't imported at first run, and users can’t import them manually.\r\n\r\nIf you don’t configure this policy, favorites are imported at first run, and users can choose whether to import them manually during later browsing sessions.\r\n\r\nYou can also set this policy as a recommendation. This means that Microsoft Edge imports favorites on first run, but users can select or clear the **favorites** option during manual import.\r\n\r\n**Note**: This policy currently manages importing from Internet Explorer (on Windows 7, 8, and 10), Google Chrome (on Windows 7, 8, and 10 and on macOS), Mozilla Firefox (on Windows 7, 8, and 10 and on macOS), and Apple Safari (on macOS) browsers.",
+                    "helpText": "",
+                    "name": "ImportFavorites_recommended",
+                    "displayName": "Allow importing of favorites",
+                    "version": "638917477006998785",
+                    "defaultOptionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_importfavorites_recommended_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "5.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": null,
+                        "windowsSkus": [],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 1,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_importfavorites_recommended_0",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Disabled",
+                            "displayName": "Disabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_importfavorites_recommended_1",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Enabled",
+                            "displayName": "Enabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_favoritesbarenabled_recommended",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_favoritesbarenabled_recommended_1",
+                    "children": []
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "none",
+                    "keywords": [
+                        "FavoritesBarEnabled_recommended",
+                        "Enable favorites bar",
+                        "\\Microsoft Edge - Default Settings (users can override)",
+                        "Microsoft Edge - Default Settings (users can override)"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/microsoft_edge~Policy~microsoft_edge_recommended/FavoritesBarEnabled_recommended",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_favoritesbarenabled_recommended",
+                    "categoryId": "43593f1a-6e4d-44a9-b1d4-99b375a9baa6",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_favoritesbarenabled_recommended",
+                    "description": "Enables or disables the favorites bar.\r\n\r\nIf you enable this policy, users will see the favorites bar.\r\n\r\nIf you disable this policy, users won't see the favorites bar.\r\n\r\nIf this policy is not configured, then the user can decide to use the favorites bar or not.",
+                    "helpText": "",
+                    "name": "FavoritesBarEnabled_recommended",
+                    "displayName": "Enable favorites bar",
+                    "version": "638917477006998785",
+                    "defaultOptionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_favoritesbarenabled_recommended_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "5.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": null,
+                        "windowsSkus": [],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 1,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_favoritesbarenabled_recommended_0",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Disabled",
+                            "displayName": "Disabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_favoritesbarenabled_recommended_1",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Enabled",
+                            "displayName": "Enabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "7",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev104~policy~microsoft_edge_recommended_askbeforecloseenabled_recommended",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_microsoft_edgev104~policy~microsoft_edge_recommended_askbeforecloseenabled_recommended_1",
+                    "children": []
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "none",
+                    "keywords": [
+                        "AskBeforeCloseEnabled_recommended",
+                        "Get user confirmation before closing a browser window with multiple tabs",
+                        "\\Microsoft Edge - Default Settings (users can override)",
+                        "Microsoft Edge - Default Settings (users can override)"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/microsoft_edgev104~Policy~microsoft_edge_recommended/AskBeforeCloseEnabled_recommended",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev104~policy~microsoft_edge_recommended_askbeforecloseenabled_recommended",
+                    "categoryId": "43593f1a-6e4d-44a9-b1d4-99b375a9baa6",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_microsoft_edgev104~policy~microsoft_edge_recommended_askbeforecloseenabled_recommended",
+                    "description": "This policy lets you configure whether users see a confirmation dialog before closing a browser window with multiple tabs. This dialog asks users to confirm that the browser window can be closed.\r\n\r\nIf you enable this policy, users will be presented with a confirmation dialog when closing a browser window with multiple tabs.\r\n\r\nIf you disable or don't configure this policy, a browser window with multiple tabs will close immediately without user confirmation.",
+                    "helpText": "",
+                    "name": "AskBeforeCloseEnabled_recommended",
+                    "displayName": "Get user confirmation before closing a browser window with multiple tabs",
+                    "version": "638917477006998785",
+                    "defaultOptionId": "device_vendor_msft_policy_config_microsoft_edgev104~policy~microsoft_edge_recommended_askbeforecloseenabled_recommended_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "5.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": null,
+                        "windowsSkus": [],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 1,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edgev104~policy~microsoft_edge_recommended_askbeforecloseenabled_recommended_0",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Disabled",
+                            "displayName": "Disabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edgev104~policy~microsoft_edge_recommended_askbeforecloseenabled_recommended_1",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Enabled",
+                            "displayName": "Enabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "8",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev111~policy~microsoft_edge_recommended_newpdfreaderenabled_recommended",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_microsoft_edgev111~policy~microsoft_edge_recommended_newpdfreaderenabled_recommended_0",
+                    "children": []
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "none",
+                    "keywords": [
+                        "NewPDFReaderEnabled_recommended",
+                        "Microsoft Edge built-in PDF reader powered by Adobe Acrobat enabled",
+                        "\\Microsoft Edge - Default Settings (users can override)",
+                        "Microsoft Edge - Default Settings (users can override)"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/microsoft_edgev111~Policy~microsoft_edge_recommended/NewPDFReaderEnabled_recommended",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev111~policy~microsoft_edge_recommended_newpdfreaderenabled_recommended",
+                    "categoryId": "43593f1a-6e4d-44a9-b1d4-99b375a9baa6",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_microsoft_edgev111~policy~microsoft_edge_recommended_newpdfreaderenabled_recommended",
+                    "description": "The policy lets Microsoft Edge launch the new version of the built-in PDF reader that's powered by Adobe Acrobat's PDF rendering engine. The new PDF reader ensures that there's no loss of functionality and delivers an enhanced PDF experience. This experience includes richer rendering, improved performance, strong security for PDF handling, and greater accessibility.\r\n\r\nIf you enable this policy, Microsoft Edge will use the new Adobe Acrobat powered built-in PDF reader to open all PDF files.\r\n\r\nIf you disable or don't configure this policy, Microsoft Edge will use the existing PDF reader to open all PDF files.",
+                    "helpText": "",
+                    "name": "NewPDFReaderEnabled_recommended",
+                    "displayName": "Microsoft Edge built-in PDF reader powered by Adobe Acrobat enabled",
+                    "version": "638917477006998785",
+                    "defaultOptionId": "device_vendor_msft_policy_config_microsoft_edgev111~policy~microsoft_edge_recommended_newpdfreaderenabled_recommended_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "5.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": null,
+                        "windowsSkus": [],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 1,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edgev111~policy~microsoft_edge_recommended_newpdfreaderenabled_recommended_0",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Disabled",
+                            "displayName": "Disabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edgev111~policy~microsoft_edge_recommended_newpdfreaderenabled_recommended_1",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Enabled",
+                            "displayName": "Enabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "9",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev88~policy~microsoft_edge_recommended_showmicrosoftrewards_recommended",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_microsoft_edgev88~policy~microsoft_edge_recommended_showmicrosoftrewards_recommended_0",
+                    "children": []
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "none",
+                    "keywords": [
+                        "ShowMicrosoftRewards_recommended",
+                        "Show Microsoft Rewards experiences",
+                        "\\Microsoft Edge - Default Settings (users can override)",
+                        "Microsoft Edge - Default Settings (users can override)"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/microsoft_edgev88~Policy~microsoft_edge_recommended/ShowMicrosoftRewards_recommended",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev88~policy~microsoft_edge_recommended_showmicrosoftrewards_recommended",
+                    "categoryId": "43593f1a-6e4d-44a9-b1d4-99b375a9baa6",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_microsoft_edgev88~policy~microsoft_edge_recommended_showmicrosoftrewards_recommended",
+                    "description": "Show Microsoft Rewards experience and notifications.\r\nIf you enable this policy:\r\n   - Microsoft account users (excludes Azure AD accounts) in search and earn markets will see the Microsoft Rewards experience in their Microsoft Edge user profile.\r\n   - The setting to enable Microsoft Rewards in Microsoft Edge settings will be enabled and toggled on.\r\n   - The setting to enable Give mode will be enabled and respect the user's setting.\r\n\r\nIf you disable this policy:\r\n   - Microsoft account users (excludes Azure AD accounts) in search and earn markets will not see the Microsoft Rewards experience in their Microsoft Edge user profile.\r\n   - The setting to enable Microsoft Rewards in Microsoft Edge settings will be disabled and toggled off.\r\n\r\nIf you don't configure this policy:\r\n   - Microsoft account users (excludes Azure AD accounts) in search and earn markets will see the Microsoft Rewards experience in their Microsoft Edge user profile.\r\n   - The setting to enable Microsoft Rewards in Microsoft Edge settings will be enabled and toggled on.\r\n   - The setting to enable Give mode will be enabled and respect the user's setting.",
+                    "helpText": "",
+                    "name": "ShowMicrosoftRewards_recommended",
+                    "displayName": "Show Microsoft Rewards experiences",
+                    "version": "638917477006998785",
+                    "defaultOptionId": "device_vendor_msft_policy_config_microsoft_edgev88~policy~microsoft_edge_recommended_showmicrosoftrewards_recommended_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "5.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": null,
+                        "windowsSkus": [],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 1,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edgev88~policy~microsoft_edge_recommended_showmicrosoftrewards_recommended_0",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Disabled",
+                            "displayName": "Disabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edgev88~policy~microsoft_edge_recommended_showmicrosoftrewards_recommended_1",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Enabled",
+                            "displayName": "Enabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "10",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_1",
+                    "children": [
+                        {
+                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                            "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_restoreonstartup",
+                            "settingInstanceTemplateReference": null,
+                            "choiceSettingValue": {
+                                "settingValueTemplateReference": null,
+                                "value": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_restoreonstartup_4",
+                                "children": []
+                            }
+                        }
+                    ]
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "none",
+                    "keywords": [
+                        "RestoreOnStartup_recommended",
+                        "Action to take on Microsoft Edge startup",
+                        "\\Microsoft Edge - Default Settings (users can override)\\Startup, home page and new tab page",
+                        "Microsoft Edge - Default Settings (users can override)\\Startup, home page and new tab page",
+                        "Startup, home page and new tab page"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/microsoft_edgev77.3~Policy~microsoft_edge_recommended~Startup_recommended/RestoreOnStartup_recommended",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended",
+                    "categoryId": "1653fa6c-aa99-4918-92c7-1df85d8843e1",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "default",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_restoreonstartup",
+                    "description": "",
+                    "helpText": "",
+                    "name": "RestoreOnStartup",
+                    "displayName": "Action to take on Microsoft Edge startup (Device)",
+                    "version": "638917477006998785",
+                    "defaultOptionId": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_restoreonstartup_5",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "5.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": null,
+                        "windowsSkus": [],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 1,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_restoreonstartup_5",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Open a new tab",
+                            "displayName": "Open a new tab",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": "5"
+                            },
+                            "dependentOn": [
+                                {
+                                    "dependentOn": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_1",
+                                    "parentSettingId": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended"
+                                }
+                            ],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_restoreonstartup_1",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Restore the last session",
+                            "displayName": "Restore the last session",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": "1"
+                            },
+                            "dependentOn": [
+                                {
+                                    "dependentOn": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_1",
+                                    "parentSettingId": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended"
+                                }
+                            ],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_restoreonstartup_4",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Open a list of URLs",
+                            "displayName": "Open a list of URLs",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": "4"
+                            },
+                            "dependentOn": [
+                                {
+                                    "dependentOn": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_1",
+                                    "parentSettingId": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended"
+                                }
+                            ],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_restoreonstartup_6",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Open a list of URLs and restore the last session",
+                            "displayName": "Open a list of URLs and restore the last session",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": "6"
+                            },
+                            "dependentOn": [
+                                {
+                                    "dependentOn": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_1",
+                                    "parentSettingId": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended"
+                                }
+                            ],
+                            "dependedOnBy": []
+                        }
+                    ]
+                },
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "none",
+                    "keywords": [
+                        "RestoreOnStartup_recommended",
+                        "Action to take on Microsoft Edge startup",
+                        "\\Microsoft Edge - Default Settings (users can override)\\Startup, home page and new tab page",
+                        "Microsoft Edge - Default Settings (users can override)\\Startup, home page and new tab page",
+                        "Startup, home page and new tab page"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/microsoft_edgev77.3~Policy~microsoft_edge_recommended~Startup_recommended/RestoreOnStartup_recommended",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended",
+                    "categoryId": "1653fa6c-aa99-4918-92c7-1df85d8843e1",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended",
+                    "description": "Specify how Microsoft Edge behaves when it starts.\r\n\r\nIf you want a new tab to always open on startup, choose 'RestoreOnStartupIsNewTabPage'.\r\n\r\nIf you want to reopen URLs that were open the last time Microsoft Edge closed, choose 'RestoreOnStartupIsLastSession'. The browsing session will be restored as it was. Note that this option disables some settings that rely on sessions or that perform actions on exit (such as Clear browsing data on exit or session-only cookies).\r\n\r\nIf you want to open a specific set of URLs, choose 'RestoreOnStartupIsURLs'.\r\n\r\nStarting in Microsoft Edge version 125, if you want to reopen URLs that were open the last time Microsoft Edge closed and open a specific set of URLs, choose 'RestoreOnStartupIsLastSessionAndURLs'.\r\n\r\nDisabling this setting is the same as leaving it not configured. Users will be able to change it in Microsoft Edge.\r\n\r\nThis policy is only available on Windows instances that are joined to a Microsoft Active Directory domain, joined to Microsoft Azure Active Directory, or instances that enrolled for device management. On macOS, this policy is only available on instances that are managed via MDM or joined to a domain via MCX.\r\n\r\nPolicy options mapping:\r\n\r\n* RestoreOnStartupIsNewTabPage (5) = Open a new tab\r\n\r\n* RestoreOnStartupIsLastSession (1) = Restore the last session\r\n\r\n* RestoreOnStartupIsURLs (4) = Open a list of URLs\r\n\r\n* RestoreOnStartupIsLastSessionAndURLs (6) = Open a list of URLs and restore the last session\r\n\r\nUse the preceding information when configuring this policy.",
+                    "helpText": "",
+                    "name": "RestoreOnStartup_recommended",
+                    "displayName": "Action to take on Microsoft Edge startup",
+                    "version": "638917477006998785",
+                    "defaultOptionId": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "5.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": null,
+                        "windowsSkus": [],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 1,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_0",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Disabled",
+                            "displayName": "Disabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_1",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Enabled",
+                            "displayName": "Enabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": [
+                                {
+                                    "dependedOnBy": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_restoreonstartup",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "11",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_1",
+                    "children": [
+                        {
+                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                            "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_restoreonstartup",
+                            "settingInstanceTemplateReference": null,
+                            "choiceSettingValue": {
+                                "settingValueTemplateReference": null,
+                                "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_restoreonstartup_4",
+                                "children": []
+                            }
+                        }
+                    ]
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "none",
+                    "keywords": [
+                        "RestoreOnStartup_recommended",
+                        "Action to take on startup",
+                        "\\Microsoft Edge - Default Settings (users can override)\\Startup, home page and new tab page",
+                        "Microsoft Edge - Default Settings (users can override)\\Startup, home page and new tab page",
+                        "Startup, home page and new tab page"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/microsoft_edge~Policy~microsoft_edge_recommended~Startup_recommended/RestoreOnStartup_recommended",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended",
+                    "categoryId": "1653fa6c-aa99-4918-92c7-1df85d8843e1",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "default",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_restoreonstartup",
+                    "description": "",
+                    "helpText": "",
+                    "name": "RestoreOnStartup",
+                    "displayName": "Action to take on startup (Device)",
+                    "version": "638917477006998785",
+                    "defaultOptionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_restoreonstartup_5",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "5.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": null,
+                        "windowsSkus": [],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 1,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_restoreonstartup_5",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Open a new tab",
+                            "displayName": "Open a new tab",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": "5"
+                            },
+                            "dependentOn": [
+                                {
+                                    "dependentOn": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_1",
+                                    "parentSettingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended"
+                                }
+                            ],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_restoreonstartup_1",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Restore the last session",
+                            "displayName": "Restore the last session",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": "1"
+                            },
+                            "dependentOn": [
+                                {
+                                    "dependentOn": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_1",
+                                    "parentSettingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended"
+                                }
+                            ],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_restoreonstartup_4",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Open a list of URLs",
+                            "displayName": "Open a list of URLs",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": "4"
+                            },
+                            "dependentOn": [
+                                {
+                                    "dependentOn": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_1",
+                                    "parentSettingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended"
+                                }
+                            ],
+                            "dependedOnBy": []
+                        }
+                    ]
+                },
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "none",
+                    "keywords": [
+                        "RestoreOnStartup_recommended",
+                        "Action to take on startup",
+                        "\\Microsoft Edge - Default Settings (users can override)\\Startup, home page and new tab page",
+                        "Microsoft Edge - Default Settings (users can override)\\Startup, home page and new tab page",
+                        "Startup, home page and new tab page"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/microsoft_edge~Policy~microsoft_edge_recommended~Startup_recommended/RestoreOnStartup_recommended",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended",
+                    "categoryId": "1653fa6c-aa99-4918-92c7-1df85d8843e1",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended",
+                    "description": "Specify how Microsoft Edge behaves when it starts.\r\n\r\nIf you want a new tab to always open on startup, choose 'Open new tab' (5).\r\n\r\nIf you want to reopen URLs that were open the last time Microsoft Edge closed, choose 'Restore the last session' (1). The browsing session will be restored as it was. Note that this option disables some settings that rely on sessions or that perform actions on exit (such as Clear browsing data on exit or session-only cookies).\r\n\r\nIf you want to open a specific set of URLs, choose 'Open a list of URLs' (4).\r\n\r\nDisabling this setting is equivalent to leaving it not configured. Users will be able to change it in Microsoft Edge.\r\n\r\nThis policy is available only on Windows instances that are joined to a Microsoft Active Directory domain or Windows 10 Pro or Enterprise instances enrolled for device management.\r\n\r\n* 1 = Restore the last session\r\n\r\n* 4 = Open a list of URLs\r\n\r\n* 5 = Open a new tab",
+                    "helpText": "",
+                    "name": "RestoreOnStartup_recommended",
+                    "displayName": "Action to take on Microsoft Edge startup",
+                    "version": "638917477006998785",
+                    "defaultOptionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "5.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": null,
+                        "windowsSkus": [],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 1,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_0",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Disabled",
+                            "displayName": "Disabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_1",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Enabled",
+                            "displayName": "Enabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": [
+                                {
+                                    "dependedOnBy": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_restoreonstartup",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "12",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_homepagelocation_recommended",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_homepagelocation_recommended_1",
+                    "children": [
+                        {
+                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                            "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_homepagelocation_recommended_homepagelocation",
+                            "settingInstanceTemplateReference": null,
+                            "simpleSettingValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": " https://launchpad.classlink.com/williamsport"
+                            }
+                        }
+                    ]
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "none",
+                    "keywords": [
+                        "HomepageLocation_recommended",
+                        "Configure the home page URL",
+                        "\\Microsoft Edge - Default Settings (users can override)\\Startup, home page and new tab page",
+                        "Microsoft Edge - Default Settings (users can override)\\Startup, home page and new tab page",
+                        "Startup, home page and new tab page"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/microsoft_edge~Policy~microsoft_edge_recommended~Startup_recommended/HomepageLocation_recommended",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_homepagelocation_recommended",
+                    "categoryId": "1653fa6c-aa99-4918-92c7-1df85d8843e1",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_homepagelocation_recommended",
+                    "description": "Configures the default home page URL in Microsoft Edge.\r\n\r\nThe home page is the page opened by the Home button. The pages that open on startup are controlled by the 'RestoreOnStartup' (Action to take on startup) policies.\r\n\r\nYou can either set a URL here or set the home page to open the new tab page. If you select to open the new tab page, then this policy doesn't take effect.\r\n\r\nIf you enable this policy, users can't change their home page URL, but they can choose to use the new tab page as their home page.\r\n\r\nIf you disable or don't configure this policy, users can choose their own home page, as long as the 'HomepageIsNewTabPage' (Set the new tab page as the home page) policy isn't enabled.\r\n\r\nThis policy is available only on Windows instances that are joined to a Microsoft Active Directory domain or Windows 10 Pro or Enterprise instances enrolled for device management.\r\n\r\nExample value: https://www.contoso.com",
+                    "helpText": "",
+                    "name": "HomepageLocation_recommended",
+                    "displayName": "Configure the home page URL",
+                    "version": "638917477006998785",
+                    "defaultOptionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_homepagelocation_recommended_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "5.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": null,
+                        "windowsSkus": [],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 1,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_homepagelocation_recommended_0",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Disabled",
+                            "displayName": "Disabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_homepagelocation_recommended_1",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Enabled",
+                            "displayName": "Enabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": [
+                                {
+                                    "dependedOnBy": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_homepagelocation_recommended_homepagelocation",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingDefinition",
+                    "accessTypes": "none",
+                    "keywords": [
+                        "HomepageLocation_recommended",
+                        "Configure the home page URL",
+                        "\\Microsoft Edge - Default Settings (users can override)\\Startup, home page and new tab page",
+                        "Microsoft Edge - Default Settings (users can override)\\Startup, home page and new tab page",
+                        "Startup, home page and new tab page"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/microsoft_edge~Policy~microsoft_edge_recommended~Startup_recommended/HomepageLocation_recommended",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_homepagelocation_recommended",
+                    "categoryId": "1653fa6c-aa99-4918-92c7-1df85d8843e1",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "default",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_homepagelocation_recommended_homepagelocation",
+                    "description": "",
+                    "helpText": "",
+                    "name": "HomepageLocation",
+                    "displayName": "Home page URL (Device)",
+                    "version": "638917477006998785",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "5.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": null,
+                        "windowsSkus": [],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 1,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "valueDefinition": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+                        "format": "none",
+                        "inputValidationSchema": null,
+                        "maximumLength": 1000000,
+                        "minimumLength": 0,
+                        "isSecret": false,
+                        "fileTypes": []
+                    },
+                    "defaultValue": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": null
+                    },
+                    "dependentOn": [
+                        {
+                            "dependentOn": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_homepagelocation_recommended_1",
+                            "parentSettingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_homepagelocation_recommended"
+                        }
+                    ],
+                    "dependedOnBy": []
+                }
+            ]
+        },
+        {
+            "id": "13",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartupurls_recommended",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartupurls_recommended_1",
+                    "children": [
+                        {
+                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                            "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartupurls_recommended_restoreonstartupurlsdesc",
+                            "settingInstanceTemplateReference": null,
+                            "simpleSettingCollectionValue": [
+                                {
+                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                    "settingValueTemplateReference": null,
+                                    "value": " https://launchpad.classlink.com/williamsport"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "none",
+                    "keywords": [
+                        "RestoreOnStartupURLs_recommended",
+                        "Sites to open when the browser starts",
+                        "\\Microsoft Edge - Default Settings (users can override)\\Startup, home page and new tab page",
+                        "Microsoft Edge - Default Settings (users can override)\\Startup, home page and new tab page",
+                        "Startup, home page and new tab page"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/microsoft_edge~Policy~microsoft_edge_recommended~Startup_recommended/RestoreOnStartupURLs_recommended",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartupurls_recommended",
+                    "categoryId": "1653fa6c-aa99-4918-92c7-1df85d8843e1",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartupurls_recommended",
+                    "description": "Specify a list of websites to open automatically when the browser starts. If you don't configure this policy, no site is opened on startup.\r\n\r\nThis policy only works if you also set the 'RestoreOnStartup' (Action to take on startup) policy to 'Open a list of URLs' (4).\r\n\r\nThis policy is only available on Windows instances that are joined to a Microsoft Active Directory domain or Windows 10 Pro or Enterprise instances that are enrolled for device management.\r\n\r\nExample value:\r\n\r\nhttps://contoso.com\r\nhttps://www.fabrikam.com",
+                    "helpText": "",
+                    "name": "RestoreOnStartupURLs_recommended",
+                    "displayName": "Sites to open when the browser starts",
+                    "version": "638917477006998785",
+                    "defaultOptionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartupurls_recommended_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "5.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": null,
+                        "windowsSkus": [],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 1,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartupurls_recommended_0",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Disabled",
+                            "displayName": "Disabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartupurls_recommended_1",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Enabled",
+                            "displayName": "Enabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": [
+                                {
+                                    "dependedOnBy": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartupurls_recommended_restoreonstartupurlsdesc",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionDefinition",
+                    "accessTypes": "none",
+                    "keywords": [
+                        "RestoreOnStartupURLs_recommended",
+                        "Sites to open when the browser starts",
+                        "\\Microsoft Edge - Default Settings (users can override)\\Startup, home page and new tab page",
+                        "Microsoft Edge - Default Settings (users can override)\\Startup, home page and new tab page",
+                        "Startup, home page and new tab page"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/microsoft_edge~Policy~microsoft_edge_recommended~Startup_recommended/RestoreOnStartupURLs_recommended",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartupurls_recommended",
+                    "categoryId": "1653fa6c-aa99-4918-92c7-1df85d8843e1",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "default",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartupurls_recommended_restoreonstartupurlsdesc",
+                    "description": "",
+                    "helpText": "",
+                    "name": "RestoreOnStartupURLsDesc",
+                    "displayName": "Sites to open when the browser starts (Device)",
+                    "version": "638917477006998785",
+                    "defaultValue": null,
+                    "maximumCount": 1000,
+                    "minimumCount": 1,
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "5.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": null,
+                        "windowsSkus": [],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 1,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "valueDefinition": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+                        "format": "none",
+                        "inputValidationSchema": null,
+                        "maximumLength": 2048,
+                        "minimumLength": 0,
+                        "isSecret": false,
+                        "fileTypes": []
+                    },
+                    "dependentOn": [
+                        {
+                            "dependentOn": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartupurls_recommended_1",
+                            "parentSettingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartupurls_recommended"
+                        }
+                    ],
+                    "dependedOnBy": []
                 }
             ]
         }
